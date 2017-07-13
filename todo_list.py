@@ -18,8 +18,9 @@ def add_to_list(my_list):
 
 def view_list(my_list):
     """Print each item in the list."""
+    for item in my_list:
+        print item
 
-    print "The view_list function has not yet been written"
 
 
 def display_main_menu(my_list):
@@ -34,7 +35,7 @@ def display_main_menu(my_list):
         if user_options == "A":
             add_to_list(my_list)
         elif user_options == "B":
-            print view_list(my_list)
+            view_list(my_list)
         elif user_options == "C":
             break
 
@@ -42,4 +43,3 @@ def display_main_menu(my_list):
 
 my_list = []
 display_main_menu(my_list)
-
